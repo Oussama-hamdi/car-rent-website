@@ -1,0 +1,318 @@
+.car-rent .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 769px) {
+  .car-rent .container {
+    width: calc(100% - 250px);
+  }
+}
+
+.car-rent .car-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.car-rent .car {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.car-rent .home-car-card {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+  background-image: url("../../assets//bg1.png");
+  background-position: center;
+}
+
+.car-rent .home-car-card::before {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-default-500);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.car-rent .home-car-card .card-content {
+  width: 75%;
+}
+
+.car-rent .home-car-card .card-content h2 {
+  font-weight: 400;
+  color: var(--white);
+}
+.car-rent .home-car-card .card-content p {
+  color: var(--white);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.car-rent .home-car-card .home-card-img {
+  display: flex;
+  justify-content: center;
+}
+
+.car-rent .car-imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.car-rent .car-imgs .img-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.car-rent .car-imgs div:nth-child(1) {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid var(--primary-default-500);
+  padding: 10px;
+  background-image: url("../../assets//bg1.png");
+  background-position: center;
+}
+
+.car-rent .car-imgs div:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-default-500);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.car-rent .car-info {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.car-rent .car-info-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.car-rent .car-info-title h2 {
+  font-size: 24px;
+  color: var(--secondary-default-500);
+}
+
+.car-rent .car-info-title .stars {
+  display: flex;
+  margin-top: 5px;
+}
+
+.car-rent .car-info-title .stars p {
+  color: var(--secondary-light-300);
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.car-rent .car-info-title .stars svg:not(:last-child) {
+  color: #fbad39;
+}
+
+.car-rent .car-info-header .heart {
+  color: #ed3f3f;
+}
+
+.car-rent .car-info-details > p {
+  margin: 30px 0;
+}
+
+.car-rent .categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.car-rent .category {
+  display: grid;
+  grid-template-columns: 2fr auto;
+}
+
+.car-rent .category p:first-child {
+  color: var(--secondary-light-300);
+}
+
+.car-rent .car-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  margin: 20px 0 8px;
+}
+
+.car-rent .current-price span {
+  margin-left: 2px;
+  color: var(--secondary-light-300);
+}
+
+.car-rent .old-price {
+  text-decoration: line-through;
+  color: var(--secondary-light-300);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Car Reviews */
+.car-rent .car-reviews {
+  margin: 50px 0;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.car-rent .reviews-title {
+  color: var(--secondary-default-500);
+}
+
+.car-rent .review-title h2 span {
+  background-color: var(--primary-default-500);
+  color: var(--white);
+  padding: 3px 16px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+.car-rent .reviews {
+  margin: 30px 0;
+}
+
+.car-rent .reviews .reviewer {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.car-rent .reviews .reviewer .reviewer-img img {
+  width: 200px;
+}
+
+.car-rent .reviews .reviewer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.car-rent .reviewer-wrapper .reviewer-name p {
+  color: var(--secondary-light-300);
+}
+
+.car-rent .stars-date-wrapper .stars {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  margin-top: 5px;
+  color: var(--secondary-light-300);
+}
+
+.car-rent .stars-date-wrapper .stars svg:not(:last-child) {
+  color: #fbad39;
+}
+
+.car-rent .stars-date-wrapper p {
+  font-size: 12px;
+  color: var(--secondary-light-300);
+  text-align: right;
+}
+
+.car-rent .review-content {
+  margin: 20px 0;
+}
+
+.car-rent .review-content p {
+  line-height: 1.5;
+  font-size: 14px;
+  color: var(--secondary-light-400);
+}
+
+.car-rent .show-all-btn {
+  display: flex;
+  gap: 5px;
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--secondary-light-300);
+}
+
+/* Cars Section */
+
+.car-recommendations .popular {
+  margin-top: 50px;
+}
+
+.car-recommendations .popular-title {
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.car-recommendations .popular-title h2 {
+  color: var(--secondary-light-300);
+  font-size: 12px;
+}
+
+.car-recommendations .popular-title p {
+  color: var(--primary-default-500);
+}
+
+.car-recommendations .popular-cars {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.car-recommendations .popular-cars::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+}
+
+/* Optional: If needed, handle scrollbar for other browsers */
+.car-recommendations .popular-cars {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Optional: For older versions of Firefox */
+.car-recommendations .popular-cars {
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.car-recommendations .recommended {
+  margin-top: 50px;
+}
+
+.car-recommendations .recommended-title {
+  padding-left: 20px;
+  font-size: 12px;
+  color: var(--secondary-light-300);
+}
+
+.car-recommendations .recommended-cars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
