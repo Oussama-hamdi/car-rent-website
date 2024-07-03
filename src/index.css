@@ -1,11 +1,11 @@
 /* Start global styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f6f7f9;
+  overflow-x: hidden;
 }
 
 *,
@@ -65,6 +65,12 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
+/* Extra small */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
 /* Small */
 @media (min-width: 768px) {
   .container {
@@ -84,3 +90,49 @@ h6 {
   }
 }
 /* End global styles */
+
+/* Start css variables */
+:root {
+  /* Primary Colors */
+  --primary-dark-900: #0a196f;
+  --primary-dark-800: #102587;
+  --primary-dark-700: #1a37a7;
+  --primary-dark-600: #264bc8;
+  --primary-default-500: #3366ff;
+  --primary-light-400: #658df1;
+  --primary-light-300: #85a8f8;
+  --primary-light-200: #aec8fc;
+  --primary-light-100: #d6e4fd;
+
+  /* Secondary Colors */
+  --secondary-dark-900: #040815;
+  --secondary-dark-800: #080c19;
+  --secondary-dark-700: #0d121f;
+  --secondary-dark-600: #131825;
+  --secondary-default-500: #1a202c;
+  --secondary-light-400: #596780;
+  --secondary-light-300: #90a3bf;
+  --secondary-light-200: #c3d4e9;
+  --secondary-light-100: #e0e9f4;
+
+  /* Information Colors */
+  --info-dark-900: #102e7a;
+  --info-dark-800: #1a4393;
+  --info-dark-700: #2a60b7;
+  --info-dark-600: #3d81db;
+  --info-default-500: #54a6ff;
+  --info-light-400: #7ec2ff;
+  --info-light-300: #98d3ff;
+  --info-light-200: #bae5ff;
+  --info-light-100: #dcf3ff;
+
+  --white: #ffffff;
+
+  --border-color: #c3d4e9;
+}
+/* End css variables */
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
