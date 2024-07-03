@@ -1,0 +1,66 @@
+nav .logo .search-wrapper {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
+  border-radius: 70px;
+  border: 1px solid var(--border-color);
+}
+
+nav .logo .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .logo .search input {
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+nav .logo .search svg,
+nav .logo .filter .icon {
+  color: var(--secondary-light-400);
+  font-size: 20px;
+}
+nav .logo .filter .icon {
+  cursor: pointer;
+  border: none;
+}
+
+/* TODO: Fix the responsive input on the screen 767px exactly */
+@media (max-width: 767px) {
+  nav .search-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  nav .search-wrapper .search {
+    display: flex;
+  }
+  nav .search-wrapper .search svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--secondary-light-400);
+  }
+  nav .search-wrapper .search input {
+    outline: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    width: 90%;
+  }
+
+  nav .search-wrapper .filter .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: var(--secondary-light-400);
+    cursor: pointer;
+  }
+}
