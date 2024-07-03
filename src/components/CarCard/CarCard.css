@@ -1,0 +1,79 @@
+.car-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--white);
+  width: 100%;
+  margin: 10px;
+  padding: 16px;
+}
+.car-card .car-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-card .car-name {
+  font-size: 18px;
+  margin: 0;
+}
+
+.car-card .car-favorite {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.car-card .car-favorite.favorite {
+  color: #ed3f3f;
+}
+
+.car-card .car-type {
+  color: #666;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+/*TODO: Fix the image height for all the cars */
+.car-card .car-image {
+  width: 100%;
+  margin: 32px 0;
+}
+
+.car-card .car-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 8px 0;
+}
+
+.car-card .car-spec {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.car-card .car-icon {
+  margin-right: 4px;
+  font-size: 20px;
+}
+
+.car-card .car-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  margin: 20px 0 8px;
+}
+
+.car-card .current-price span {
+  margin-left: 2px;
+  color: var(--secondary-light-300);
+}
+
+.car-card .old-price {
+  text-decoration: line-through;
+  color: var(--secondary-light-300);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
