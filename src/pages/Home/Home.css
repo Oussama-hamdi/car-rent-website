@@ -1,0 +1,163 @@
+.home {
+  position: relative;
+  margin-top: 20px;
+}
+
+.home .home-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.home .home-car-card {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  background-position: center;
+  width: 100%;
+}
+
+.home .home-car-card.card-one::before,
+.home .home-car-card.card-two::before {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home .home-car-card.card-one::before {
+  background-color: var(--info-default-500);
+}
+
+.home .home-car-card.card-two::before {
+  background-color: var(--primary-default-500);
+}
+
+.home .home-car-card.card-one {
+  background-image: url("../../assets//bg2.png");
+}
+.home .home-car-card.card-two {
+  background-image: url("../../assets//bg1.png");
+}
+
+.home .home-car-card .card-content {
+  width: 55%;
+}
+
+.home .home-car-card .card-content h2 {
+  font-weight: 400;
+  color: var(--white);
+}
+.home .home-car-card .card-content p {
+  color: var(--white);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.home .home-car-card.card-two .home-card-btn {
+  background-color: var(--info-default-500);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.home .home-car-card .home-card-img {
+  display: flex;
+  justify-content: center;
+  margin-top: -15px;
+  margin-left: 50px;
+}
+
+.home .home-car-card .home-card-img img {
+  width: 65%;
+}
+
+@media (max-width: 768px) {
+  .home .home-car-card.card-two {
+    display: none;
+  }
+}
+
+/* Cars Section */
+
+.home .popular {
+  margin-top: 50px;
+}
+
+.home .popular-title {
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home .popular-title h2 {
+  color: var(--secondary-light-300);
+  font-size: 12px;
+}
+
+.home .popular-title p {
+  color: var(--primary-default-500);
+}
+
+.home .popular-cars {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.home .popular-cars::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+}
+
+/* Optional: If needed, handle scrollbar for other browsers */
+.home .popular-cars {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Optional: For older versions of Firefox */
+.home .popular-cars {
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.home .recommended {
+  margin-top: 50px;
+}
+
+.home .recommended-title {
+  padding-left: 20px;
+  font-size: 12px;
+  color: var(--secondary-light-300);
+}
+
+.home .recommended-cars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.home .show-more {
+  position: relative;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.home .show-more::after {
+  content: "120 Car";
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  color: var(--secondary-light-300);
+  font-size: 12px;
+}
