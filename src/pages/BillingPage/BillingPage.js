@@ -191,7 +191,7 @@ function BillingPage() {
                 </label>
               </div>
             </div>
-            <Button text="Rent Now" />
+            <Button text="Rent Now" location={"/"} />
             <div className="data-protection">
               <div className="icon">
                 <TbShieldCheck />

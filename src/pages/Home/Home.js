@@ -5,6 +5,7 @@ import Button from "../../components/Button/Button";
 import PickupDropoff from "../../components/PickupDropoff/PickupDropoff";
 import CarCard from "../../components/CarCard/CarCard";
 import carsData from "../../utility/carsData";
+import { NavLink } from "react-router-dom";
 
 function Home() {
   return (
@@ -18,10 +19,7 @@ function Home() {
                 Ease of doing a car rental safely and reliably. Of course at a
                 low price.
               </p>
-              <Button
-                text="Rental Car"
-                onClick={() => console.log("Rental Car")}
-              />
+              <Button text="Rental Car" location={"/carRent"} />
             </div>
             <div className="home-card-img">
               <img src={Koenigsegg} alt="Koenigsegg" />
@@ -34,7 +32,9 @@ function Home() {
                 Ease of doing a car rental safely and reliably. Of course at a
                 low price.
               </p>
-              <button className="home-card-btn">Rental Car</button>
+              <NavLink to={"/carRent"}>
+                <button className="home-card-btn">Rental Car</button>
+              </NavLink>
             </div>
             <div className="home-card-img">
               <img src={NissanGTR} alt="Koenigsegg" />
@@ -86,6 +86,7 @@ function Home() {
                   transmission={car.transmission}
                   capacity={car.capacity}
                   isFavorite={car.isFavorite}
+                  location={"/carRent"}
                 />
               ))}
             </div>
