@@ -4,6 +4,7 @@ import SearchBar from "../SearchBar/SearchBar";
 import "./Navbar.css";
 import ProfilePicture from "../../assets/profile-man.png";
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 //TODO: Add the logo in the small screens for the RentCar page
 function Navbar({ showLogo }) {
@@ -12,7 +13,7 @@ function Navbar({ showLogo }) {
   useEffect(() => {
     // Check screen size on component mount
     const handleResize = () => {
-      setShowSearchBar(window.innerWidth < 767);
+      setShowSearchBar(window.innerWidth <= 767);
     };
 
     handleResize(); // Check initially
@@ -24,7 +25,13 @@ function Navbar({ showLogo }) {
       <div className="container">
         <div className="navbar-menu">
           <div className="logo">
-            {showLogo ? <h1>Morent</h1> : <FaBars />}
+            {showLogo ? (
+              <NavLink to={"/"}>
+                <h1>Morent</h1>
+              </NavLink>
+            ) : (
+              <FaBars />
+            )}
             {!showSearchBar && <SearchBar />}
           </div>
           <div className="navbar-profile-wrapper">

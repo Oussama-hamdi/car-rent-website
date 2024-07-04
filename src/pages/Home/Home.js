@@ -64,6 +64,7 @@ function Home() {
                   transmission={car.transmission}
                   capacity={car.capacity}
                   isFavorite={car.isFavorite}
+                  location={"/carRent"}
                 />
               ))}
             </div>

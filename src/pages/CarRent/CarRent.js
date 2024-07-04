@@ -89,6 +89,7 @@ function CarRent() {
               transmission={car.transmission}
               capacity={car.capacity}
               isFavorite={car.isFavorite}
+              location={`/carRent/${car.id}`}
             />
           ))}
         </div>

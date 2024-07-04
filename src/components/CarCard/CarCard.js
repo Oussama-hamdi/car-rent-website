@@ -15,6 +15,7 @@ const CarCard = ({
   transmission,
   capacity,
   isFavorite,
+  location,
 }) => {
   return (
     <div className="car-card">
@@ -42,7 +43,7 @@ const CarCard = ({
           </span>
           {oldPrice && <div className="old-price">{oldPrice}</div>}
         </div>
-        <Button text="Rent Now" />
+        <Button text="Rent Now" location={location} />
       </div>
     </div>
   );

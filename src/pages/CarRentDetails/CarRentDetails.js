@@ -160,7 +160,7 @@ function CarRentDetails() {
                 </span>
                 <div className="old-price">$100.00</div>
               </div>
-              <Button text="Rent Now" />
+              <Button text="Rent Now" location={"/carRent/:carId/billing"} />
             </div>
           </div>
         </div>
@@ -266,6 +266,7 @@ function CarRentDetails() {
                   transmission={car.transmission}
                   capacity={car.capacity}
                   isFavorite={car.isFavorite}
+                  location={`/carRent/${car.id}/billing`}
                 />
               ))}
             </div>
@@ -287,6 +288,7 @@ function CarRentDetails() {
                   transmission={car.transmission}
                   capacity={car.capacity}
                   isFavorite={car.isFavorite}
+                  location={`/carRent/${car.id}/billing`}
                 />
               ))}
             </div>
