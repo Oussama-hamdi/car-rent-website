@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/car-rent-website/static/css/main.6a7f48f5.css",
-    "main.js": "/car-rent-website/static/js/main.83495491.js",
+    "main.js": "/car-rent-website/static/js/main.f34429a8.js",
     "static/media/koenigsegg.png": "/car-rent-website/static/media/koenigsegg.33be71896c5127234918.png",
     "static/media/nissan-gt-r.png": "/car-rent-website/static/media/nissan-gt-r.9b66a57de2c78c77ead8.png",
     "static/media/cr-v.png": "/car-rent-website/static/media/cr-v.037d2affde5d2932d46e.png",
@@ -17,10 +17,10 @@
     "static/media/maps.png": "/car-rent-website/static/media/maps.ff2aa56eda577e809537.png",
     "index.html": "/car-rent-website/index.html",
     "main.6a7f48f5.css.map": "/car-rent-website/static/css/main.6a7f48f5.css.map",
-    "main.83495491.js.map": "/car-rent-website/static/js/main.83495491.js.map"
+    "main.f34429a8.js.map": "/car-rent-website/static/js/main.f34429a8.js.map"
   },
   "entrypoints": [
     "static/css/main.6a7f48f5.css",
-    "static/js/main.83495491.js"
+    "static/js/main.f34429a8.js"
   ]
 }
