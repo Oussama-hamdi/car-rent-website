@@ -1,0 +1,195 @@
+.billing {
+  margin: 20px;
+}
+
+.billing .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .billing .container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
+
+.billing .container .card {
+  z-index: 1;
+  background-color: var(--white);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 20px;
+}
+
+.billing .payment-processing .input-parent {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.billing .rental-info .pick-up,
+.billing .rental-info .drop-off {
+  margin: 20px 0;
+}
+
+.billing .rental-info .pick-up label,
+.billing .rental-info .drop-off label {
+  margin-left: 10px;
+}
+
+.billing .payment-method .card-credit {
+  background-color: #f6f7f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+.billing .payment-method .payment-option {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.billing .payment-method .card-credit .payment-option label {
+  margin-left: 10px;
+}
+
+.billing .payment-method .payment-option {
+  margin-right: 10px;
+}
+
+.billing .payment-method .payment-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f6f7f9;
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.billing .payment-method .payment-wrapper .payment label {
+  margin-left: 10px;
+  color: var(--secondary-default-500);
+}
+
+.billing .confirmation .agreement {
+  background-color: #f6f7f9;
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.billing .confirmation .agreement label {
+  margin-left: 10px;
+  color: #1f2544;
+}
+
+.billing .confirmation .data-protection {
+  margin: 20px 0;
+}
+
+.billing .confirmation .data-protection .icon svg {
+  font-size: 30px;
+}
+
+.billing .confirmation .data-protection .icon h4 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.billing .confirmation .data-protection .icon p {
+  color: var(--secondary-light-300);
+  font-size: 14px;
+}
+
+.billing .rental-summary .car-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.billing .rental-summary .car-info .img-wrapper {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/bg1.png");
+  background-position: center;
+  padding: 20px;
+}
+
+.billing .rental-summary .car-info .img-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-default-500);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.billing .rental-summary .car-info-title .stars {
+  display: flex;
+  margin-top: 5px;
+}
+
+.billing .rental-summary .car-info-title .stats h2 {
+  font-size: 18px;
+}
+
+.billing .rental-summary .car-info-title .stars svg {
+  margin-right: 1px;
+}
+
+.billing .rental-summary .car-info-title .stars svg:not(:last-child) {
+  color: #fbad39;
+}
+
+.billing .rental-summary .car-info-title .review-stats p {
+  text-wrap: nowrap;
+  font-size: 14px;
+}
+
+.billing .rental-summary .pricing {
+  border-top: 1px solid var(--secondary-light-300);
+  margin: 20px 0;
+  padding-top: 10px;
+}
+
+.billing .rental-summary .pricing .subtotal-tax {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.billing .rental-summary .pricing .subtotal-tax h4 {
+  color: var(--secondary-light-300);
+}
+
+.billing .rental-summary .promo-code {
+  position: relative;
+}
+
+.billing .rental-summary .promo-code input {
+  padding: 15px 20px;
+  border: none;
+  background-color: #f6f7f9;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.billing .rental-summary .promo-code p {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: var(--secondary-default-500);
+}

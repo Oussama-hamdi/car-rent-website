@@ -1,0 +1,23 @@
+.total-rental-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.total-rental-price .header h3 {
+  font-size: 18px;
+  color: var(--secondary-default-500);
+  margin-bottom: 5px;
+}
+
+.total-rental-price .header p {
+  font-size: 14px;
+  color: var(--secondary-light-300);
+}
+
+.total-rental-price .price {
+  color: var(--secondary-default-500);
+  font-weight: 500;
+  font-size: 24px;
+}
