@@ -1,10 +1,8 @@
-// src/CarCard.js
-import React from "react";
+import React, { useState } from "react";
 import { FaHeart, FaGasPump, FaCog, FaUserFriends } from "react-icons/fa";
 import "./CarCard.css";
 import Button from "../Button/Button";
 
-//TODO: Handle the car is favorite or not on Click on remove it from the carsList
 const CarCard = ({
   image,
   name,
@@ -17,11 +15,16 @@ const CarCard = ({
   isFavorite,
   location,
 }) => {
+  let [favorite, setFavorite] = useState(isFavorite);
+
   return (
     <div className="car-card">
       <div className="car-header">
         <h3 className="car-name">{name}</h3>
-        <FaHeart className={`car-favorite ${isFavorite ? "favorite" : ""}`} />
+        <FaHeart
+          onClick={() => setFavorite(!favorite)}
+          className={`car-favorite ${favorite ? "favorite" : ""}`}
+        />
       </div>
       <p className="car-type">{type}</p>
       <img src={image} alt={name} className="car-image" />
