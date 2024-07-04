@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import { Routes, Route } from "react-router-dom";
 import CarRent from "./pages/CarRent/CarRent";
 import CarRentDetails from "./pages/CarRentDetails/CarRentDetails";
+import BillingPage from "./pages/BillingPage/BillingPage";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/carRent" element={<CarRent />} />
         <Route path="/carRent/:carId" element={<CarRentDetails />} />
+        <Route path="/carRent/:carId/billing" element={<BillingPage />} />
+        <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
       <Footer />
     </div>
