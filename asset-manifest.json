@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/car-rent-website/static/css/main.61504e7c.css",
+    "main.js": "/car-rent-website/static/js/main.40641b8a.js",
+    "static/media/koenigsegg.png": "/car-rent-website/static/media/koenigsegg.33be71896c5127234918.png",
+    "static/media/nissan-gt-r.png": "/car-rent-website/static/media/nissan-gt-r.9b66a57de2c78c77ead8.png",
+    "static/media/cr-v.png": "/car-rent-website/static/media/cr-v.037d2affde5d2932d46e.png",
+    "static/media/car-inside2.png": "/car-rent-website/static/media/car-inside2.1bb59fa16e1e7e12e2ac.png",
+    "static/media/mg-zx-exclusice.png": "/car-rent-website/static/media/mg-zx-exclusice.be5cdb5ae2fa45c0f2a1.png",
+    "static/media/cr-v-black.png": "/car-rent-website/static/media/cr-v-black.692c924bb8d0cf1b5982.png",
+    "static/media/all-new-terios.png": "/car-rent-website/static/media/all-new-terios.30b38c1aa55d0e6dd6bc.png",
+    "static/media/new-mg-zs.png": "/car-rent-website/static/media/new-mg-zs.35ce3320d100fdcb588e.png",
+    "static/media/all-new-rush.png": "/car-rent-website/static/media/all-new-rush.e15a4b5b68e73da271a6.png",
+    "static/media/car-inside1.png": "/car-rent-website/static/media/car-inside1.75f2aa27121a98946570.png",
+    "static/media/rolls-royce.png": "/car-rent-website/static/media/rolls-royce.daa2e97ec34c6d0c1e97.png",
+    "static/media/bg2.png": "/car-rent-website/static/media/bg2.710b0af0b9dc0afbf7fb.png",
+    "index.html": "/car-rent-website/index.html",
+    "main.61504e7c.css.map": "/car-rent-website/static/css/main.61504e7c.css.map",
+    "main.40641b8a.js.map": "/car-rent-website/static/js/main.40641b8a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61504e7c.css",
+    "static/js/main.40641b8a.js"
+  ]
+}
