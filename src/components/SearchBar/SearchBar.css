@@ -1,6 +1,10 @@
 nav .logo .search-wrapper {
   padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-left: 4rem;
   border-radius: 70px;
@@ -8,8 +12,14 @@ nav .logo .search-wrapper {
 }
 
 nav .logo .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -32,19 +42,29 @@ nav .logo .filter .icon {
 @media (max-width: 767px) {
   nav .search-wrapper {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-left: 0;
     margin-top: 20px;
   }
   nav .search-wrapper .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   nav .search-wrapper .search svg {
     position: absolute;
     left: 10px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     color: var(--secondary-light-400);
   }

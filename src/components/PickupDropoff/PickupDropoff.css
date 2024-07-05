@@ -4,8 +4,14 @@
 
 .pickup-dropoff {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 20px;
 }
@@ -24,7 +30,11 @@
 
 .pickup-dropoff-info {
   margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 20px;
 }
@@ -36,7 +46,11 @@
 
 .pickup-dropoff-info .select {
   margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 10px;
   gap: 10px;
@@ -70,6 +84,9 @@
 
 @media (max-width: 991px) {
   .pickup-dropoff {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .pickup-dropoff .pickup,
@@ -79,6 +96,8 @@
   .pickup-dropoff .arrows-icon {
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     padding: 8px;
   }

@@ -3,15 +3,25 @@
 }
 
 .billing .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   gap: 10px;
 }
 
 @media (max-width: 768px) {
   .billing .container {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 }
@@ -25,8 +35,13 @@
 }
 
 .billing .payment-processing .input-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -47,7 +62,11 @@
   border-radius: 10px;
 }
 .billing .payment-method .payment-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 20px;
   margin: 20px 0;
@@ -62,7 +81,11 @@
 }
 
 .billing .payment-method .payment-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 20px;
   background-color: #f6f7f9;
@@ -107,16 +130,26 @@
 }
 
 .billing .rental-summary .car-info {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
 .billing .rental-summary .car-info .img-wrapper {
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-image: url("../../assets/bg1.png");
   background-position: center;
@@ -130,6 +163,8 @@
   height: 90%;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: var(--primary-default-500);
   z-index: -1;
@@ -137,6 +172,8 @@
 }
 
 .billing .rental-summary .car-info-title .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 5px;
 }
@@ -165,7 +202,11 @@
 }
 
 .billing .rental-summary .pricing .subtotal-tax {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 20px 0;
 }
@@ -190,6 +231,8 @@
   position: absolute;
   top: 50%;
   right: 20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   color: var(--secondary-default-500);
 }
