@@ -57,15 +57,16 @@ function Dashboard() {
             <li>
               <FiHelpCircle /> Help & Center
             </li>
-            <li>
+            <li className="dark-mode">
               <RxBackpack /> Dark Mode
-              <div className="icons">
-                <div className="active">
-                  <IoMoonOutline />
-                </div>
-                <div>
-                  <MdOutlineWbSunny />
-                </div>
+              <div className="dark-light">
+                <label>
+                  <input className="toggle-checkbox" type="checkbox" />
+                  <div className="toggle-switch">
+                    <MdOutlineWbSunny />
+                    <IoMoonOutline />
+                  </div>
+                </label>
               </div>
             </li>
           </ul>

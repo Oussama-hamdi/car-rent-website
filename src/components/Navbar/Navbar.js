@@ -36,21 +36,15 @@ function Navbar({ showLogo }) {
           </div>
           <div className="navbar-profile-wrapper">
             <div className="navbar-icons">
-              <div className="icon">
-                <NavLink to={"/dashboard"}>
-                  <FaHeart />
-                </NavLink>
-              </div>
-              <div className="icon">
-                <NavLink to={"/dashboard"}>
-                  <FaBell />
-                </NavLink>
-              </div>
-              <div className="icon">
-                <NavLink to={"/dashboard"}>
-                  <IoMdSettings />
-                </NavLink>
-              </div>
+              <NavLink className="icon" to={"/dashboard"}>
+                <FaHeart />
+              </NavLink>
+              <NavLink className="icon" to={"/dashboard"}>
+                <FaBell />
+              </NavLink>
+              <NavLink className="icon" to={"/dashboard"}>
+                <IoMdSettings />
+              </NavLink>
             </div>
             <NavLink to={"/dashboard"}>
               <img src={ProfilePicture} alt="Profile" />
