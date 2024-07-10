@@ -20,3 +20,9 @@
   color: var(--secondary-light-300);
   font-size: 14px;
 }
+
+@media (max-width: 768px) {
+  .billing-header p {
+    font-size: 12px;
+  }
+}
